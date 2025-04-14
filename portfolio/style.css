@@ -1,0 +1,138 @@
+/* Global Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(-45deg, #0f0f0f, #141e30, #243b55, #0f0f0f);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: #eee;
+  line-height: 1.6;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Moving Background */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00f0ff;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+.glow {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #00f0ff;
+  text-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff;
+  margin: 10px 0;
+}
+
+a {
+  color: #00f0ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+section {
+  margin: 30px 0;
+}
+
+.highlight {
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 20px;
+  border-left: 4px solid #00f0ff;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.highlight:hover {
+  background-color: rgba(60, 60, 60, 0.8);
+}
+
+h2 {
+  color: #00f0ff;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: square inside;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+/* Toggle Mode Button */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #00f0ff;
+  color: #111;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #ffffff;
+}
+
+/* Light Mode */
+.light-mode {
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  color: #111;
+}
+
+.light-mode .highlight {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-left: 4px solid #0077ff;
+}
+
+.light-mode a {
+  color: #0077ff;
+}
+
+.light-mode .glow {
+  color: #0077ff;
+  text-shadow: none;
+}
