@@ -3,67 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sujeet Kumar Portfolio</title>
+  <title>Sujeet Kumar</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <button class="toggle-btn" onclick="toggleMode()">🌗</button>
+  <div class="toggle-wrapper">
+    <button id="toggleTheme">🌓 Toggle Theme</button>
+  </div>
 
-  <header data-aos="fade-down">
-    <div class="profile">
-      <img src="sujeet.jpg.jpg" alt="Sujeet Kumar Profile" />
-      <h1 class="glow"><span id="typed-text"></span></h1>
-      <p>Patna, Bihar | <a href="mailto:thesujeetaryan@gmail.com">thesujeetaryan@gmail.com</a> | +91 9199206035</p>
-    </div>
-  </header>
+  <div class="container">
+    <header>
+      <div class="nav-container">
+        <img src="sujeet.jpg.jpg" alt="Sujeet's Photo" class="nav-photo" />
+        <h1>Sujeet Kumar</h1><h1 id="animatedTitle"></h1>
 
-  <main>
-    <section class="highlight" data-aos="fade-up">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="section-box">
+      <h2>Welcome to My Digital Portfolio!</h2>
+      <p>Design. Code. Create. Repeat.</p>
+    </section>
+
+    <section id="about" class="section-box">
       <h2>About Me</h2>
-      <p>A dedicated and detail-oriented BCA student passionate about tech and problem-solving. Skilled in web development, digital marketing, and graphic design.</p>
+      <p>
+        Hello! I’m <strong>Sujeet Kumar</strong>, a 3rd year <strong>BCA student</strong> at IGNOU, based in Patna, Bihar.
+        I'm passionate about <strong>UI/UX Design, Web Development, Graphic Design</strong>, and exploring creative digital solutions.
+      </p>
+      <p>
+        With experience in HTML, CSS, JavaScript, and tools like Figma, Adobe XD, and CorelDraw, I design modern, user-centered interfaces that bring ideas to life.
+      </p>
     </section>
 
-    <section data-aos="fade-right">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>IGNOU, Patna</strong> – BCA (2022–Present)</li>
-        <li><strong>R.P.S. College</strong> – Intermediate (2020–2022)</li>
-        <li><strong>ST Raza International</strong> – High School (2019–2020)</li>
-      </ul>
-    </section>
-
-    <section class="highlight" data-aos="fade-up">
+    <section id="skills" class="section-box animate-section">
       <h2>Skills</h2>
-      <p>HTML, CSS, JavaScript, Figma, Adobe XD, CorelDraw</p>
+      <div class="skills-container">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Figma</div>
+        <div class="skill-box">Adobe XD</div>
+        <div class="skill-box">CorelDraw</div>
+        <div class="skill-box">UI/UX Design</div>
+        <div class="skill-box">Digital Marketing</div>
+      </div>
     </section>
 
-    <section data-aos="fade-left">
-      <h2>Projects</h2>
-      <ul>
-        <li>Portfolio Website using HTML, CSS & JS</li>
-        <li>Netflix Clone using Figma</li>
-      </ul>
+    <section id="projects" class="section-box">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Netflix Clone</h3>
+          <p>UI design created in Figma</p>
+          
+          <a href="https://www.figma.com/proto/njQlWbs3eNCgWYDSApMQh2/Untitled?node-id=22-10&t=Pn3g2OJF1MgQmeQN-1" target="_blank" class="btn">View Prototype</a>
+        </div>
+
+        <div class="project-card">
+          <h3>User story Presentation</h3>
+          <p>Built using Canva</p>
+          <a href="https://www.canva.com/design/DAGdsBKe9bQ/GNcrbEiV0iFqNYyLT3pRYw/edit?utm_content=DAGdsBKe9bQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn">View Presentation</a>
+        </div>
+        <div class="project-card">
+            <h3>E-learning App</h3>
+            <p>Mobile + Desktop version using Figma</p>
+            <a href="https://www.figma.com/design/d6HDu9GMEEWd6Gp0A0cuAA/programming-website?node-id=103-52141&m=dev&t=oBAxqPScNMWqpnId-1" class="btn">View Design</a>
+          </div>
+          <div class="project-card">
+            <h3>Grocery Store</h3>
+            <p>Using Canva with animations</p>
+            <a href="https://www.canva.com/design/DAGgRQ9aCQw/PxFrxADTwt3l2w8UuT9YNA/edit?utm_content=DAGgRQ9aCQw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Wireframe</h3>
+            <p>Using Excalidraw</p>
+            <a href="https://excalidraw.com/#json=Q1l5rtjihiMAnv1N1KRlj,3U5y3wVn2ZWvCOfeRgBr4g" class="btn">View</a>
+          </div>
+  
+        <div class="project-card">
+          <h3>Library Management System</h3>
+          <p>UI/UX team project (in progress)</p>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <p class="coming-soon">🚧 Coming Soon 🚧</p>
+        </div>
+      </div>
     </section>
 
-    <section class="highlight" data-aos="fade-up">
-      <h2>Certifications</h2>
-      <p>UI/UX Designer (Programming Classes, Patna)</p>
+    <section id="resume" class="section-box">
+      <h2>Resume</h2>
+      <a href="Sujeet_Resume.pdf" download class="btn">📄 Download My Resume</a>
     </section>
 
-    <section data-aos="fade-up">
-      <h2>Languages</h2>
-      <p>English, Hindi, Basic German</p>
+    <section id="contact" class="section-box animate-section">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:thesujeetaryan8455@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/sujeet-kumar-408186333/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.behance.net/sujeetkumar373"><i class="fab fa-behance"></i></a>
+      </div>
     </section>
-  </main>
 
-  <footer data-aos="fade-up">
-    <p>© 2025 Sujeet Kumar</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Sujeet Kumar. All rights reserved.</p>
+    </footer>
+  </div>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <script>
+    
+    const toggleBtn = document.getElementById('toggleTheme');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+
+    // Animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.animate-section').forEach(section => {
+      observer.observe(section);
+    });
+    
+  </script>
 </body>
 </html>
